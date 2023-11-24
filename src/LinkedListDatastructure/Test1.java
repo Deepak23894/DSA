@@ -11,7 +11,6 @@ class Test2 extends Test1
 {
     public void l4()
     {
-        eat();
     }
 }
 class Test3 extends Test2
