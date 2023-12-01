@@ -6,7 +6,8 @@ public class Fibonachi {
 //        for (int i = 0; i < n; i++) {
 //            System.out.println(fibo(i));
 //        }
-        fibonacci(50);
+        //fibonacci(50);
+        System.out.println(Nfibonacci(6));
     }
 
     static int fibo(int n) {
@@ -29,6 +30,21 @@ public class Fibonachi {
             counter++;
 
         }
+    }
+    static int Nfibonacci (int N)
+    {
+        int n1=0;
+        int n2=1;
+        int counter = 2;
+        while (counter<N)
+        {
+            int n3= n1+n2;
+            n1=n2;
+            n2=n3;
+            counter++;
+
+        }
+        return n2;
     }
 
 }
